@@ -1,0 +1,17 @@
+@import "../../theme/variables";
+
+[data-fs-header] {
+    display: flex;
+    justify-content: space-between;
+    min-width: 20.313rem;
+    max-width: 31.25rem;
+    padding: 0.625rem;
+    background-color: $off-white;
+    border-radius: 1rem;
+
+    [data-fs-header-logo-name] {
+        display: flex;
+        gap: 0.25rem;
+        align-items: center;
+    }
+}

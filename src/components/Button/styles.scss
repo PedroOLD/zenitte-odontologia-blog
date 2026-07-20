@@ -1,0 +1,19 @@
+@import "../../theme/variables";
+
+[data-fs-button] {
+    font-family: $font-primary;
+    border-radius: 50px;
+    color: $bege;
+    min-width: 200px;
+    min-height: 35px;
+}
+
+[data-fs-button-variant="default"] {
+    background-color: "transparent";
+    border: 1px solid $bege;
+}
+
+[data-fs-button-variant="solid"] {
+    background-color: $marrom;
+    border: 1px solid $marrom;
+}
