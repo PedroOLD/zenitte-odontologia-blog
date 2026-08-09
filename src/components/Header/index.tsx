@@ -8,7 +8,7 @@ export const Header = () => {
             <div data-fs-header-logo-name>
                 <IconLogo />
 
-                <p>Zênitte odontologia estética</p>
+                <p data-fs-header-text>Zênitte odontologia estética</p>
             </div>
 
             <MainButton label="Agende agora" variant="solid" />

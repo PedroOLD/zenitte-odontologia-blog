@@ -1,4 +1,5 @@
-@import url('https://googleapis.com');
+$screen-tablet: 45rem;
+$screen-desktop: 65rem;
 
 $green: #8B8355;
 $marrom: #713F1E;
@@ -7,4 +8,11 @@ $bege: #E2D8CC;
 $off-white: #FEF4E5;
 $off-black: #1F1B18;
 
-$font-primary: 'Manrope', sans-serif;
+$font-primary: var(--font-manrope), 'Manrope', sans-serif;
+$font-secondary: var(--font-cormorant), 'Cormorant Garamond', serif;
+
+@mixin obt-reposible-tablet {
+    @media (min-width: $screen-tablet) {
+        @content;
+    }
+}

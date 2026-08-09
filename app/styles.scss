@@ -1,0 +1,36 @@
+@import "../src/theme/variables";
+
+body {
+    background-color: $off-white;
+}
+
+[data-fs-section-servicos] {
+    padding: 2rem 3rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    [data-fs-button] {
+        max-width: 15rem;
+        align-self: center;
+    }
+
+    [data-fs-section-servicos-title] {
+        font-family: $font-primary;
+        color: $marrom;
+        font-size: 1.5rem;
+        font-weight: 600s;
+        margin: unset;
+    }
+
+    [data-fs-container-sevicos] {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem 0;
+        
+        @include obt-reposible-tablet {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

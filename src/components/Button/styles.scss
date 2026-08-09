@@ -6,6 +6,7 @@
     color: $bege;
     min-width: 200px;
     min-height: 35px;
+    cursor: pointer;
 }
 
 [data-fs-button-variant="default"] {
@@ -16,4 +17,11 @@
 [data-fs-button-variant="solid"] {
     background-color: $marrom;
     border: 1px solid $marrom;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $off-white;
+        color: $marrom;
+        transition: 0.3s;
+    }
 }

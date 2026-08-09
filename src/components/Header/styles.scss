@@ -3,15 +3,36 @@
 [data-fs-header] {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     min-width: 20.313rem;
     max-width: 31.25rem;
     padding: 0.625rem;
     background-color: $off-white;
     border-radius: 1rem;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999;
 
     [data-fs-header-logo-name] {
         display: flex;
         gap: 0.25rem;
         align-items: center;
+    }
+
+    [data-fs-header-text] {
+        font-family: $font-primary;
+        color: $marrom;
+        font-size: 0.875rem;
+        font-weight: 300;
+    }
+
+    [data-fs-button] {
+        width: 100%;
+        min-width: unset;
+        max-width: 10rem;
+        max-height: 40px;
     }
 }

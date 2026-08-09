@@ -1,0 +1,22 @@
+@import "../../theme/variables";
+
+[data-fs-title-description] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    h3 {
+        color: $marrom;
+        font-size: 1rem;
+        font-family: $font-primary;
+        font-weight: 400;
+        margin: unset;
+    }
+
+    p {
+        font-family: $font-secondary;
+        font-weight: 400;
+        font-size: 0.875rem;
+        margin: unset;
+    }
+}
