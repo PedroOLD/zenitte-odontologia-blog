@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     min-width: 20.313rem;
-    max-width: 31.25rem;
+    max-width: 20.25rem;
     padding: 0.625rem;
     background-color: $off-white;
     border-radius: 1rem;
@@ -15,6 +15,11 @@
     right: 0;
     margin: auto;
     z-index: 999;
+    box-shadow: 0px 2px 16px rgba($off-black, 0.25);
+
+    @include obt-reposible-tablet() {
+        max-width: 31.25rem;
+    }
 
     [data-fs-header-logo-name] {
         display: flex;
@@ -25,14 +30,22 @@
     [data-fs-header-text] {
         font-family: $font-primary;
         color: $marrom;
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         font-weight: 300;
+
+        @include obt-reposible-tablet() {
+            font-size: 0.875rem;
+        }
     }
 
     [data-fs-button] {
         width: 100%;
         min-width: unset;
-        max-width: 10rem;
+        max-width: 7rem;
         max-height: 40px;
+
+        @include obt-reposible-tablet() {
+            max-width: 10rem;
+        }
     }
 }

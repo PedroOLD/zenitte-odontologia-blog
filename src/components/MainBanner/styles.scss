@@ -3,19 +3,27 @@
 
 [data-fs-main-banner] {
     position: relative;
-    min-height: 40vh;
+    min-height: 90vh;
     width: 100%;
-    padding: 3rem;
+    padding: 1rem;
     box-sizing: border-box;
     display: flex;
     align-items: end;
 
     @include obt-reposible-tablet() {
-        min-height: 90vh;
+        min-height: 70vh;
+        padding: 3rem;
     }
     
     [data-fs-image-bg] {
         object-fit: cover;
+    }
+
+    [data-fs-banner-overlay] {
+        position: absolute;
+        inset: 0;
+        background-color: rgba($marrom, 0.2);
+        pointer-events: none;
     }
 
     [data-fs-image-logo] {

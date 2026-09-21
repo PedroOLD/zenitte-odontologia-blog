@@ -5,10 +5,14 @@ body {
 }
 
 [data-fs-section-servicos] {
-    padding: 2rem 3rem;
+    padding: 2rem 1rem;
     justify-content: center;
     display: flex;
     flex-direction: column;
+
+    @include obt-reposible-tablet() {
+        padding: 2rem 3rem;
+    }
 
     [data-fs-button] {
         max-width: 15rem;
@@ -31,6 +35,46 @@ body {
         
         @include obt-reposible-tablet {
             grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+[data-fs-banner-portifolio] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    background-color: $green;
+    background-image: url("/images/bg-image.svg");
+
+    [data-fs-container-banner-portifolio] {
+        width: 100%;
+        height: 100%;
+        gap: 0.625rem;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin: unset;
+            font-size: 1.5rem;
+            color: $off-white;
+            font-family: $font-primary;
+            font-weight: 600;
+        }
+
+        [data-fs-content-banner] {
+            position: relative;
+            width: 100%;
+            height: 17.813rem;
+            
+            img {
+                object-fit: cover;
+                border-radius: 8px;
+            }
         }
     }
 }
